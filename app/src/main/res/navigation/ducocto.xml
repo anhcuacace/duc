@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ducocto"
+    app:startDestination="@id/blankFragment2">
+
+    <fragment
+        android:id="@+id/blankFragment2"
+        android:name="com.example.myapplication.BlankFragment2"
+        android:label="BlankFragment2" >
+        <action
+            android:id="@+id/action_blankFragment2_to_blankFragment1"
+            app:destination="@id/blankFragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment1"
+        android:name="com.example.myapplication.BlankFragment1"
+        android:label="wishlist_item"
+        tools:layout="@layout/wishlist_item" >
+        <argument
+            android:name="ahihi"
+            app:argType="com.example.myapplication.WishList" />
+    </fragment>
+</navigation>
